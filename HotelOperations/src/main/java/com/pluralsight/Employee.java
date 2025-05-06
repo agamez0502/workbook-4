@@ -8,6 +8,7 @@ public class Employee {
     private String department;
     private double payRate;
     private double hoursWorked;
+    private double startTime;
 
     //constructor to instantiate an employee
     public Employee(int employeeID, String name, String department, double payRate, double hoursWorked) {
@@ -21,8 +22,8 @@ public class Employee {
     //create derived methods
 
     //method to check total pay
-    public double getTotalPay(){
-        if(hoursWorked <= 40){
+    public double getTotalPay() {
+        if (hoursWorked <= 40) {
             return getRegularHours() * payRate;
         } else {
             return (40 * payRate) + getOvertimeHours() * (payRate * 1.5);
@@ -30,18 +31,35 @@ public class Employee {
     }
 
     //method to check regular hours
-    public double getRegularHours(){
-        if(hoursWorked <= 40){
+    public double getRegularHours() {
+        if (hoursWorked <= 40) {
             return hoursWorked;
         }
         return 40;
     }
 
     //method to check overtime hours
-    public double getOvertimeHours(){
-        if(hoursWorked > 40){
+    public double getOvertimeHours() {
+        if (hoursWorked > 40) {
             return hoursWorked - 40;
         }
         return 0;
+    }
+
+    //method to punch in
+    public void punchIn(double time) {
+        startTime = time;
+    }
+
+    //method to punch out
+    public void punchOut(double time) {
+        if (time > startTime) {
+            hoursWorked += time - startTime;
+        }
+    }
+
+    //getters
+    public double getHoursWorked() {
+        return hoursWorked;
     }
 }

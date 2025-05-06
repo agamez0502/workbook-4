@@ -20,7 +20,7 @@ public class Room {
 
     //method to check if the room is available
     //based on if it is clean and occupied
-    public boolean isAvailable(){
+    public boolean isAvailable() {
 
 //        if(!this.isOccupied && !this.isDirty){
 //            return true;
@@ -28,7 +28,37 @@ public class Room {
 //        return false;
 
         return !this.isDirty() && !this.isOccupied();
+    }
 
+    //method to check in
+    public void checkIn() {
+        if (isAvailable()) {
+            isOccupied = true;
+            isDirty = true;
+            System.out.println("Checked in");
+            return; //stop here if successful - had trouble with this during testing
+        }
+        System.out.println("Error - couldn't check in");
+    }
+
+    //method to check out
+    public void checkout() {
+        if (isOccupied()) {
+            isOccupied = false;
+            System.out.println("Checked out");
+            return; //stop here if successful - had trouble with this during testing
+        }
+        System.out.println("Error - couldn't check out");
+    }
+
+    //method to clean room
+    public void cleanroom() {
+        if (isDirty && !isOccupied) {
+            isDirty = false;
+            System.out.println("Room is clean now");
+            return; //stop here if successful - had trouble with this during testing
+        }
+        System.out.println("Error - room couldn't be cleaned");
     }
 
     //create getters

@@ -20,11 +20,11 @@ public class Reservation {
     public double getPrice() {
         if (roomType.equalsIgnoreCase("king") && isWeekend) {
             return (139.00 * 0.10) + 139.00;
-        } else if (roomType.equalsIgnoreCase("king")){
+        } else if (roomType.equalsIgnoreCase("king")) {
             return 139.00;
-        } else if(roomType.equalsIgnoreCase("double") && isWeekend){
+        } else if (roomType.equalsIgnoreCase("double") && isWeekend) {
             return (124.00 * 0.10) + 124.00;
-        } else if (roomType.equalsIgnoreCase("double")){
+        } else if (roomType.equalsIgnoreCase("double")) {
             return 124.00;
         }
         return 0;
