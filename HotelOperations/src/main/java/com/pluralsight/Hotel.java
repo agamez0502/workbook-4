@@ -57,4 +57,9 @@ public class Hotel {
     public int getAvailableRooms() {
         return numberOfRooms - bookedBasicRooms;
     }
+
+    //getters
+    public String getName() {
+        return name;
+    }
 }

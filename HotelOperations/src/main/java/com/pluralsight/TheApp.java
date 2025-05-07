@@ -93,30 +93,30 @@ public class TheApp {
 //        System.out.println("Total hours worked: " + e1.getHoursWorked());
 
         //------------------------------------------------------------------------------------------------------------
-        //test our hotel
-        Hotel fancy = new Hotel("Hilton", 10, 20, 5, 10);
-        Hotel budget = new Hotel("Holiday Inn", 10, 20);
-
-        //checking available suites/rooms for fancy
-        System.out.println("Number of available suites: " + fancy.getAvailableSuites());
-        System.out.println("Number of available rooms: " + fancy.getAvailableRooms());
-
-        //checking available suites/rooms for budget
-        System.out.println("\nNumber of available suites: " + budget.getAvailableSuites());
-        System.out.println("Number of available rooms: " + budget.getAvailableRooms());
-
-        //book rooms
-        boolean booking1 = fancy.bookRoom(1, true); //booking 1 suite
-        boolean booking2 = fancy.bookRoom(1, false); //booking 1 basic room
-        boolean booking3 = budget.bookRoom(1, true); //booking 1 suite
-        boolean booking4 = budget.bookRoom(1, false); //booking 1 basic room
-
-        //checking to see if bookRoom method works for fancy
-        System.out.println("\nNumber of available suites: " + fancy.getAvailableSuites());
-        System.out.println("Number of available rooms: " + fancy.getAvailableRooms());
-
-        //checking to see if bookRoom method works for budget
-        System.out.println("\nNumber of available suites: " + budget.getAvailableSuites());
-        System.out.println("Number of available rooms: " + budget.getAvailableRooms());
+//        //test our hotel
+//        Hotel fancy = new Hotel("Hilton", 10, 20, 5, 10);
+//        Hotel budget = new Hotel("Holiday Inn", 10, 20);
+//
+//        //checking available suites/rooms for fancy
+//        System.out.println("Number of available suites: " + fancy.getAvailableSuites());
+//        System.out.println("Number of available rooms: " + fancy.getAvailableRooms());
+//
+//        //checking available suites/rooms for budget
+//        System.out.println("\nNumber of available suites: " + budget.getAvailableSuites());
+//        System.out.println("Number of available rooms: " + budget.getAvailableRooms());
+//
+//        //book rooms
+//        boolean booking1 = fancy.bookRoom(1, true); //booking 1 suite
+//        boolean booking2 = fancy.bookRoom(1, false); //booking 1 basic room
+//        boolean booking3 = budget.bookRoom(1, true); //booking 1 suite
+//        boolean booking4 = budget.bookRoom(1, false); //booking 1 basic room
+//
+//        //checking to see if bookRoom method works for fancy
+//        System.out.println("\nNumber of available suites: " + fancy.getAvailableSuites());
+//        System.out.println("Number of available rooms: " + fancy.getAvailableRooms());
+//
+//        //checking to see if bookRoom method works for budget
+//        System.out.println("\nNumber of available suites: " + budget.getAvailableSuites());
+//        System.out.println("Number of available rooms: " + budget.getAvailableRooms());
     }
 }
