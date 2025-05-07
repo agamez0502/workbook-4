@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.time.LocalDateTime;
+
 public class Employee {
 
     //create the instance variables
@@ -51,11 +53,25 @@ public class Employee {
         startTime = time;
     }
 
+    //overloaded method to punch in
+    public void punchIn() {
+        LocalDateTime now = LocalDateTime.now();
+        double time = now.getHour() + (now.getMinute() / 60.0);
+        punchIn(time);
+    }
+
     //method to punch out
     public void punchOut(double time) {
         if (time > startTime) {
             hoursWorked += time - startTime;
         }
+    }
+
+    //overloaded method to punch out
+    public void punchOut() {
+        LocalDateTime now = LocalDateTime.now();
+        double time = now.getHour() + (now.getMinute() / 60.0);
+        punchOut(time);
     }
 
     //getters

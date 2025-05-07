@@ -70,7 +70,7 @@ public class TheApp {
 //        System.out.println("Number of OT hours: " + ot1.getOvertimeHours());
 //        System.out.println("Total pay for this pay period is: " + ot1.getTotalPay());
 //
-//         //create a new employee
+//        //create a new employee
 //        Employee e1 = new Employee(3, "Alondra", "CEO", 100, 0);
 //
 //        //punch in and punch out
@@ -79,5 +79,44 @@ public class TheApp {
 //
 //        //checking to see if punch in and out method work
 //        System.out.println("Total hours worked: " + e1.getHoursWorked());
+//
+//        //overloaded method punch in and out
+//        e1.punchIn();
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        e1.punchOut();
+//
+//        //checking to see if overloaded punch in and out method work
+//        System.out.println("Total hours worked: " + e1.getHoursWorked());
+
+        //------------------------------------------------------------------------------------------------------------
+        //test our hotel
+        Hotel fancy = new Hotel("Hilton", 10, 20, 5, 10);
+        Hotel budget = new Hotel("Holiday Inn", 10, 20);
+
+        //checking available suites/rooms for fancy
+        System.out.println("Number of available suites: " + fancy.getAvailableSuites());
+        System.out.println("Number of available rooms: " + fancy.getAvailableRooms());
+
+        //checking available suites/rooms for budget
+        System.out.println("\nNumber of available suites: " + budget.getAvailableSuites());
+        System.out.println("Number of available rooms: " + budget.getAvailableRooms());
+
+        //book rooms
+        boolean booking1 = fancy.bookRoom(1, true); //booking 1 suite
+        boolean booking2 = fancy.bookRoom(1, false); //booking 1 basic room
+        boolean booking3 = budget.bookRoom(1, true); //booking 1 suite
+        boolean booking4 = budget.bookRoom(1, false); //booking 1 basic room
+
+        //checking to see if bookRoom method works for fancy
+        System.out.println("\nNumber of available suites: " + fancy.getAvailableSuites());
+        System.out.println("Number of available rooms: " + fancy.getAvailableRooms());
+
+        //checking to see if bookRoom method works for budget
+        System.out.println("\nNumber of available suites: " + budget.getAvailableSuites());
+        System.out.println("Number of available rooms: " + budget.getAvailableRooms());
     }
 }
