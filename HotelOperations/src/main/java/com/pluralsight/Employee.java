@@ -79,4 +79,7 @@ public class Employee {
         return hoursWorked;
     }
 
+    public double getStartTime() {
+        return startTime;
+    }
 }

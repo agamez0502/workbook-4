@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HotelTest {
 
-    //testing suites
+    //testing booking suites
     @Test
     public void bookRooom_should_increaseBookedSuites() {
         //arrange
@@ -19,7 +19,7 @@ class HotelTest {
         assertEquals(7, myHotel.getAvailableSuites());
     }
 
-    //testing basic rooms
+    //testing booking basic rooms
     @Test
     public void bookRooom_should_increaseBookedRooms() {
         //arrange

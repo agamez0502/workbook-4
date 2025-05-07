@@ -21,13 +21,14 @@ public class Room {
     //method to check if the room is available
     //based on if it is clean and occupied
     public boolean isAvailable() {
-
+        return !this.isDirty() && !this.isOccupied();
+        //another way to write this method
 //        if(!this.isOccupied && !this.isDirty){
+//            System.out.println("Is available");
 //            return true;
 //        }
+//        System.out.println("Is not available");
 //        return false;
-
-        return !this.isDirty() && !this.isOccupied();
     }
 
     //method to check in
