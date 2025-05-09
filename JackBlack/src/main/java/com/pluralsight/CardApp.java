@@ -37,7 +37,7 @@ public class CardApp {
         String name1 = player1.getName();
         String name2 = player2.getName();
 
-        // Determine winner
+        //determine the winner winner
         if (value1 > 21 && value2 > 21) {
             System.out.println("Both players busted. No winner.");
         } else if (value1 > 21) {
@@ -53,7 +53,7 @@ public class CardApp {
         }
 
         //print out the value of all the cards in the hand
-        System.out.println(player1.getName() +"'s hand is worth " + player1.getHandValue());
+        System.out.println(player1.getName() + "'s hand is worth " + player1.getHandValue());
         System.out.println(player2.getName() + "'s hand is worth " + player2.getHandValue());
     }
 
