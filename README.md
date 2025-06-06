@@ -47,13 +47,15 @@ Let’s build, test, and *slay* those class hierarchies. 💅
 
 ---
 
-## 💡 Core Concepts You’ll Master
-- 🔒 **Encapsulation** — keep your data safe & scoped  
-- 👩‍👧‍👦 **Class Design** — think like a software architect  
-- 🔁 **Overloading** — methods that do more with less  
-- 🧪 **Unit Testing** — build confidence with each method  
-- 🧷 **Static Members** — share logic without instantiation  
-- 🔗 **Class Collaboration** — bring your objects to life
+## 💡 Core Concepts
+
+- 🔒 **Encapsulation** — Hides internal object details and protects data through access modifiers and method interfaces.  
+- 🧱 **Class Design** — Organizes code into reusable blueprints that represent real-world entities or behaviors.  
+- 🔁 **Method Overloading** — Allows multiple methods with the same name but different parameters, enabling flexible behavior.  
+- 🧪 **Unit Testing** — Verifies the correctness of individual units of code (like methods) to ensure reliability and reduce bugs.  
+- 🧷 **Static Members** — Provides shared methods or variables across all instances of a class without requiring object creation.  
+- 🔗 **Class Interaction (Composition)** — Builds complex systems by enabling objects to contain or communicate with other objects.  
+- 🔍 **Abstraction** — Simplifies complexity by defining essential characteristics while hiding unnecessary implementation details.  
 
 ---
 
